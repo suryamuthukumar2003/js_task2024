@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* form {
+        text-align: center;
+        margin-bottom: 20px;
+        font-style: italic;
+      } */
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        /* button{
+            padding: 10px;
+        } */
+        /* th,td{
+            text-align: center;
+            border: 0.5px solid black;
+        } */
+
+        .table td {
+            text-align: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border: 0.5px solid black;
+        }
+
+        .table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: rgb(39, 37, 37);
+            color: #fff;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table tr:hover {
+            background-color: #ddd;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+        #form2{
+            margin-left: 20px;
+            margin-right:50px
+        }
+        #form2 tr td{
+            text-align: center;
+            font-size: 40px;
+        }
+        #form2 tr td input{
+            width:100%;
+            padding:5px;
+        }
+        #form2 tr td select{
+            width:100%;
+            padding:5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Time Tracker</h1>
+    <div>
+        <center style="margin-bottom: 20px">
+            <form action="" id="form-filter">
+                <label for="category">Category:</label>
+                <select name="" id="category">
+                    <option value="">All</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal Space">Personal</option>
+                </select>
+                <button id="search">Search</button>
+            </form>
+        </center>
+        <div class="main">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>SubCategory</th>
+                        <th>Duration</th>
+                        <th>Task</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+            <form>
+                <table id="form2">
+                    <tr>
+                    <td>Start a new task</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="" id="inputcategory">
+                                <option>Select the category</option>
+                                <option value="Work">Work</option>
+                                <option value="Personal Space">Personal Space</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="SubCategory" id="inputsubcategory" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Task" id="inputtask" /></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <p id="Time"></p>
+    <button id="start"></button>
+                            <button id="stop"></button>
+                            <button id="reset"></button>
+    <script src="index.js"></script>
+</body>
+
+</html>
