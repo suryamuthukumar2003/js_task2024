@@ -11,24 +11,11 @@
             margin-bottom: 20px;
         }
 
-        /* form {
-        text-align: center;
-        margin-bottom: 20px;
-        font-style: italic;
-      } */
         .table {
             width: 100%;
             border-collapse: collapse;
-            table-layout: fixed;
+            table-layout:fixed;
         }
-
-        /* button{
-            padding: 10px;
-        } */
-        /* th,td{
-            text-align: center;
-            border: 0.5px solid black;
-        } */
 
         .table td {
             text-align: center;
@@ -43,7 +30,6 @@
             background-color: rgb(39, 37, 37);
             color: #fff;
         }
-
         .table tr:nth-child(even) {
             background-color: #f2f2f2;
         }
@@ -56,21 +42,25 @@
             display: flex;
             justify-content: center;
         }
-        #form2{
+
+        #form2 {
             margin-left: 20px;
-            margin-right:50px
+            margin-right: 50px
         }
-        #form2 tr td{
+
+        #form2 tr td {
             text-align: center;
             font-size: 40px;
         }
-        #form2 tr td input{
-            width:100%;
-            padding:5px;
+
+        #form2 tr td input {
+            width: 100%;
+            padding: 5px;
         }
-        #form2 tr td select{
-            width:100%;
-            padding:5px;
+
+        #form2 tr td select {
+            width: 100%;
+            padding: 5px;
         }
     </style>
 </head>
@@ -97,6 +87,8 @@
                         <th>SubCategory</th>
                         <th>Duration</th>
                         <th>Task</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="table-body"></tbody>
@@ -104,7 +96,7 @@
             <form>
                 <table id="form2">
                     <tr>
-                    <td>Start a new task</td>
+                        <td>Start a new task</td>
                     </tr>
                     <tr>
                         <td>
@@ -125,21 +117,24 @@
                     </tr>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td><p id="Time">00:00:00</p></td>
                     </tr>
                     <tr>
                         <td>
-                            
+                            <button type="button" id="start"></button>
+                            <button type='button' id="stop"></button>
+                            <button type="button" id="reset"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="'button" id="add">Add</button>
                         </td>
                     </tr>
                 </table>
             </form>
         </div>
     </div>
-    <p id="Time"></p>
-    <button id="start"></button>
-                            <button id="stop"></button>
-                            <button id="reset"></button>
     <script src="index.js"></script>
 </body>
 
